@@ -13,17 +13,17 @@ const Header = (baslik, tarih, yazi) => {
   //
   const header_div = document.createElement("div");
   header_div.className = "header";
-  header_div.style.width = "98.5%";
-  header_div.style.margin = "auto";
 
-  const date = document.createElement("sapan");
+  const date = document.createElement("span");
   date.textContent = tarih;
+  date.className = "date";
 
   const h1 = document.createElement("h1");
   h1.textContent = baslik;
 
-  const temp = document.createElement("sapan");
+  const temp = document.createElement("span");
   temp.textContent = yazi;
+  temp.className = "temp";
 
   header_div.append(date, h1, temp);
 
